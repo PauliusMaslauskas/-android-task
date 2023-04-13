@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_id">btn_notification</string>
+    <string name="channel_name">Button Click</string>
+    <string name="channel_description">asdf</string>
+</resources>
