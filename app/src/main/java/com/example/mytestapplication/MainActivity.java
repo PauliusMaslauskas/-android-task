@@ -8,13 +8,13 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final int PERMISSION_REQUEST_CODE = 1052;
     private int NOTIFICATION_ID = 1;
 
@@ -31,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnNotify = findViewById(R.id.btnNotification);
         btnNotify.setOnClickListener(v -> sendNotification());
     }
+
     private void openSecondaryActivity() {
         Intent intent = new Intent(this, SecondaryActivity.class);
         startActivity(intent);
     }
+
     private void sendNotification() {
         String channelId = getString(R.string.channel_id);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId)
