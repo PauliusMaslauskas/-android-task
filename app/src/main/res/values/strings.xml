@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Test Application</string>
+    <string name="notification_title">ALERT</string>
+    <string name="notification_text">This is a notification from My Test App</string>
 </resources>
